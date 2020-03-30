@@ -1,0 +1,162 @@
+[
+    {
+        "name": "La Cosa Nostra",
+        "short": "LCN",
+        "chatColor": "~u~",
+        "spawn": {
+            "pos": {
+                "x": -1535.88,
+                "y": 97.84,
+                "z": 56.77
+            },
+            "rot": 228,
+            "dim": 0
+        },
+        "weapon": "weapon_golfclub",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            1,
+            1
+        ]
+    },
+    {
+        "name": "Grove Family",
+        "short": "GROVE",
+        "chatColor": "~g~",
+        "spawn": {
+            "pos": {
+                "x": 1385.54,
+                "y": -592.87,
+                "z": 74.48
+            },
+            "rot": 55.65,
+            "dim": 0
+        },
+        "weapon": "weapon_knuckle",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            53,
+            53
+        ]
+    },
+    {
+        "name": "Front Yard Ballas",
+        "short": "BALLAS",
+        "chatColor": "~p~",
+        "spawn": {
+            "pos": {
+                "x": 114.20,
+                "y": -1961.04,
+                "z": 21.33
+            },
+            "rot": 24.90,
+            "dim": 0
+        },
+        "weapon": "weapon_bat",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            145,
+            145
+        ]
+    },
+    {
+        "name": "Los Santos Vagos",
+        "short": "VAGOS",
+        "chatColor": "~y~",
+        "spawn": {
+            "pos": {
+                "x": -1067.04,
+                "y": -1674.58,
+                "z": 4.51
+            },
+            "rot": 38.91,
+            "dim": 0
+        },
+        "weapon": "weapon_machete",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            42,
+            42
+        ]
+    },
+    {
+        "name": "Midnight Club",
+        "short": "MID",
+        "chatColor": "~w~",
+        "spawn": {
+            "pos": {
+                "x": -315.26,
+                "y": -2698.48,
+                "z": 7.54
+            },
+            "rot": 315.27,
+            "dim": 0
+        },
+        "weapon": "weapon_knife",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            112,
+            112
+        ]
+    },
+    {
+        "name": "The Marabunta Grande",
+        "short": "MG13",
+        "chatColor": "~x~",
+        "spawn": {
+            "pos": {
+                "x": 1286.55,
+                "y": -1603.69,
+                "z": 54.82
+            },
+            "rot": 16.12,
+            "dim": 0
+        },
+        "weapon": "weapon_battleaxe",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            70,
+            70
+        ]
+    },
+    {
+        "name": "Triaden Mafia",
+        "short": "TRIADEN",
+        "chatColor": "~b~",
+        "spawn": {
+            "pos": {
+                "x": 1394.97,
+                "y": 1141.77,
+                "z": 114.62
+            },
+            "rot": 87,
+            "dim": 0
+        },
+        "weapon": "weapon_poolcue",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            82,
+            82
+        ]
+    },
+    {
+        "name": "YakuZa",
+        "short": "YAKI",
+        "chatColor": "~r~",
+        "spawn": {
+            "pos": {
+                "x": -1516.83,
+                "y": 851.41,
+                "z": 181.59
+            },
+            "rot": 344.35,
+            "dim": 0
+        },
+        "weapon": "weapon_switchblade",
+        "vehicle": "Schafter4",
+        "vehicleColor": [
+            28,
+            28
+        ]
+    }
+]
