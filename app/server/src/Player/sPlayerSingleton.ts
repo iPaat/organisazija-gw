@@ -59,6 +59,7 @@ class PlayerSingleton {
         );
 
         player.id = r[0].id;
+        player.adminLvl = r[0].adminLvl;
 
         new PlayerLoader(player);
 
