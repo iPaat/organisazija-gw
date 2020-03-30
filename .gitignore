@@ -5,7 +5,7 @@
 /app/client/node_modules/*
 /bridge/*
 .listcache
-server.exe
+server*
 node.dll
 conf.json
 bt.dat
