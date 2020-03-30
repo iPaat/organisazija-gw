@@ -1,0 +1,1 @@
+cd /opt/ragemp-srv/app/server && npm run build && cd /opt/ragemp-srv/app/client && npm run build && cd /opt/ragemp-srv/app/cef && npm run build
