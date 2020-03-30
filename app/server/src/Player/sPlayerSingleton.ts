@@ -60,6 +60,7 @@ class PlayerSingleton {
 
         player.id = r[0].id;
         player.adminLvl = r[0].adminLvl;
+        player.model = mp.joaat('mp_m_freemode_01');
 
         new PlayerLoader(player);
 

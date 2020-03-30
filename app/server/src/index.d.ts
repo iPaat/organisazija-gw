@@ -21,6 +21,16 @@ interface VehicleMp {
     ownerId: number
 }
 
+interface TeamData {
+    name: string;
+    short: string;
+    chatColor: string;
+    spawn: EntityCoords;
+    weapon: string;
+    vehicle: string;
+    vehicleColor?: (number)[] | null;
+}
+
 interface DatabaseConfig {
     port: number;
     host: string;

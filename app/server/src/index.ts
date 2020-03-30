@@ -1,12 +1,96 @@
 import {spawnCoords, offsetPosition} from './Options/sHelpers'
 
+const teamData: TeamData = require('./Data/TeamData.json');
+
 require('./Auth/sLogin');
+
+let team: TeamData = null;
 
 mp.events.add("sIndex-mod", (player, mod, modValue) => {
     player.vehicle.setMod(parseInt(mod), parseInt(modValue));
 });
 
 mp.events.addCommand({
+    'team': (player, _, num) => {
+        if (!teamData[parseInt(num)]) {
+            player.notify('Team ~r~nicht ~s~gefunden!');
+
+            return;
+        }
+
+        team = teamData[parseInt(num)];
+
+        player.respawn(team.spawn);
+        player.model = mp.joaat('mp_m_freemode_01');
+
+        // Hat
+        player.setProp(0, 12, 0);
+
+        // Mask
+        player.setClothes(1, 111, 7, 2);
+
+        // Hair
+        player.setClothes(2, 4, 0, 2);
+
+        // Torso
+        player.setClothes(3, 31, 0, 2);
+
+        // Legs
+        player.setClothes(4, 25, 0, 2);
+
+        // Shoes
+        player.setClothes(6, 10, 0, 2);
+
+        // Accessories
+        player.setClothes(7, 90, 0, 2);
+
+        // UnderShirt
+        player.setClothes(8, 15, 0, 2);
+
+        // Top
+        player.setClothes(11, 139, 3, 2);
+
+        // Team Weapon
+        player.giveWeapon(mp.joaat(team.weapon), 1);
+
+        // Default Weapons
+        player.giveWeapon(RageEnums.Hashes.Weapon.ASSAULTRIFLE, 600);
+        player.giveWeapon(RageEnums.Hashes.Weapon.CARBINERIFLE, 600);
+        player.giveWeapon(RageEnums.Hashes.Weapon.ADVANCEDRIFLE, 600);
+        player.giveWeapon(RageEnums.Hashes.Weapon.BULLPUPRIFLE, 600);
+        player.giveWeapon(RageEnums.Hashes.Weapon.HEAVYPISTOL, 600);
+        player.giveWeapon(RageEnums.Hashes.Weapon.UNARMED, 1);
+
+        mp.players.forEach((p) => {
+            if (p.id === player.id) {
+                p.notify(`Du gehörst nun zum Team ${team.chatColor}${team.name}~s~.`);
+
+                return
+            }
+
+            p.notify(`${player.niceName} gehört nun zum Team ${team.chatColor}${team.name}~s~.`);
+        })
+    },
+
+    'car': (player) => {
+        if (!team) {
+            player.notify('Du bist in ~r~keinem ~s~Team!');
+
+            return
+        }
+
+        const playerPos = player.position;
+        const vehiclePos = offsetPosition(playerPos.x, playerPos.y, player.heading, 2);
+        const vehicle = mp.vehicles.new(mp.joaat(team.vehicle), new mp.Vector3(vehiclePos.x, vehiclePos.y, playerPos.z), {
+            heading: player.heading + 90,
+            dimension: player.dimension,
+        });
+
+        vehicle.setColor(team.vehicleColor[0], team.vehicleColor[1]);
+        vehicle.numberPlateType = 1;
+        vehicle.numberPlate = team.short;
+    },
+
     'pos': (player) => {
         const pos = player.position;
         let rot;
