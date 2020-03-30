@@ -1,0 +1,31 @@
+{
+  "name": "organisazija-cef",
+  "version": "1.0.0",
+  "description": "Organisazija - RageMp Cef",
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --dest ../../client_packages/cef",
+    "watch": "vue-cli-service build --dest ../../client_packages/cef --watch"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "register-service-worker": "^1.7.1",
+    "sass-loader": "^8.0.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.6",
+    "vuetify": "^2.2.11",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-pwa": "^4.2.3",
+    "@vue/cli-service": "^4.2.3",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "^2.0.5",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.3.0"
+  },
+  "license": "ISC",
+  "main": "index.js"
+}

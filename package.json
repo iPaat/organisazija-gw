@@ -1,0 +1,17 @@
+{
+    "name": "organisazija-ragemp",
+    "version": "1.0.0",
+    "description": "Organisazija RageMP Server Files",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Patrick Conrad (Thomas Stark - GVMP)",
+    "license": "ISC",
+    "dependencies": {
+        "@types/mysql": "^2.15.9",
+        "@types/node": "^12.12.31",
+        "mysql": "^2.18.1",
+        "winston": "^3.2.1"
+    }
+}
