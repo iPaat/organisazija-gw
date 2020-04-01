@@ -133,7 +133,45 @@
         "vehicleColor": [
             145,
             145
-        ]
+        ],
+        "outfit": {
+            "hat": [
+                54,
+                1
+            ],
+            "mask": [
+                51,
+                6
+            ],
+            "hair": [
+                4,
+                0
+            ],
+            "torso": [
+                4,
+                0
+            ],
+            "legs": [
+                5,
+                9
+            ],
+            "shoes": [
+                57,
+                1
+            ],
+            "accessories": [
+                0,
+                0
+            ],
+            "underShirt": [
+                15,
+                0
+            ],
+            "top": [
+                126,
+                3
+            ]
+        }
     },
     {
         "name": "Los Santos Vagos",
