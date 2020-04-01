@@ -36,6 +36,20 @@ export default class PlayerLoader {
             this.armour = 100;
         };
 
+        player.changeOutfit = function (outfit) {
+            player.model = mp.joaat('mp_m_freemode_01');
+
+            player.setProp(0, outfit.hat[0], outfit.hat[1]);
+            player.setClothes(1, outfit.mask[0], outfit.mask[1], 2);
+            player.setClothes(2, outfit.hair[0], outfit.hair[1], 2);
+            player.setClothes(3, outfit.torso[0], outfit.torso[1], 2);
+            player.setClothes(4, outfit.legs[0], outfit.legs[1], 2);
+            player.setClothes(6, outfit.shoes[0], outfit.shoes[1], 2);
+            player.setClothes(7, outfit.accessories[0], outfit.accessories[1], 2);
+            player.setClothes(8, outfit.underShirt[0], outfit.underShirt[1], 2);
+            player.setClothes(11, outfit.top[0], outfit.top[1], 2);
+        };
+
         player.niceName = player.name.replace('_', ' ')
     }
 

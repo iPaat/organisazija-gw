@@ -23,32 +23,9 @@ mp.events.addCommand({
         player.respawn(team.spawn);
         player.model = mp.joaat('mp_m_freemode_01');
 
-        // Hat
-        player.setProp(0, 12, 0);
-
-        // Mask
-        player.setClothes(1, 111, 7, 2);
-
-        // Hair
-        player.setClothes(2, 4, 0, 2);
-
-        // Torso
-        player.setClothes(3, 31, 0, 2);
-
-        // Legs
-        player.setClothes(4, 25, 0, 2);
-
-        // Shoes
-        player.setClothes(6, 10, 0, 2);
-
-        // Accessories
-        player.setClothes(7, 90, 0, 2);
-
-        // UnderShirt
-        player.setClothes(8, 15, 0, 2);
-
-        // Top
-        player.setClothes(11, 139, 3, 2);
+        if (team.outfit) {
+            player.changeOutfit(team.outfit)
+        }
 
         // Team Weapon
         player.giveWeapon(mp.joaat(team.weapon), 1);

@@ -15,6 +15,20 @@ interface PlayerMp {
     teleport(coords: EntityCoords): void;
 
     respawn(coords: EntityCoords): void;
+
+    changeOutfit(outfit: Outfit): void;
+}
+
+interface Outfit {
+    hat: (number)[],
+    mask: (number)[],
+    hair: (number)[],
+    torso: (number)[],
+    legs: (number)[],
+    shoes: (number)[],
+    accessories: (number)[],
+    underShirt: (number)[],
+    top: (number)[],
 }
 
 interface VehicleMp {
@@ -29,6 +43,7 @@ interface TeamData {
     weapon: string;
     vehicle: string;
     vehicleColor?: (number)[] | null;
+    outfit?: Outfit | null;
 }
 
 interface DatabaseConfig {

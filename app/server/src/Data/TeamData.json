@@ -17,7 +17,45 @@
         "vehicleColor": [
             1,
             1
-        ]
+        ],
+        "outfit": {
+            "hat": [
+                64,
+                3
+            ],
+            "mask": [
+                111,
+                17
+            ],
+            "hair": [
+                4,
+                0
+            ],
+            "torso": [
+                31,
+                0
+            ],
+            "legs": [
+                24,
+                0
+            ],
+            "shoes": [
+                10,
+                0
+            ],
+            "accessories": [
+                90,
+                0
+            ],
+            "underShirt": [
+                15,
+                0
+            ],
+            "top": [
+                139,
+                3
+            ]
+        }
     },
     {
         "name": "Grove Family",
@@ -32,12 +70,50 @@
             "rot": 55.65,
             "dim": 0
         },
-        "weapon": "weapon_knuckle",
+        "weapon": "weapon_bat",
         "vehicle": "Schafter4",
         "vehicleColor": [
             53,
             53
-        ]
+        ],
+        "outfit": {
+            "hat": [
+                54,
+                0
+            ],
+            "mask": [
+                51,
+                5
+            ],
+            "hair": [
+                4,
+                0
+            ],
+            "torso": [
+                6,
+                0
+            ],
+            "legs": [
+                42,
+                6
+            ],
+            "shoes": [
+                57,
+                7
+            ],
+            "accessories": [
+                0,
+                0
+            ],
+            "underShirt": [
+                111,
+                0
+            ],
+            "top": [
+                88,
+                3
+            ]
+        }
     },
     {
         "name": "Front Yard Ballas",
@@ -52,7 +128,7 @@
             "rot": 24.90,
             "dim": 0
         },
-        "weapon": "weapon_bat",
+        "weapon": "weapon_knuckle",
         "vehicle": "Schafter4",
         "vehicleColor": [
             145,
